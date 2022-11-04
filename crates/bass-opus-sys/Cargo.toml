@@ -1,0 +1,4 @@
+[package]
+name = "bass-opus-sys"
+version = "0.1.0"
+edition = "2021"

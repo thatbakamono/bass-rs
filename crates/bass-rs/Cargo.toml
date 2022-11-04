@@ -1,0 +1,45 @@
+[package]
+name = "bass-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bass-alac-sys = { path = "../bass-alac-sys", optional = true }
+bass-ape-sys = { path = "../bass-ape-sys", optional = true }
+bass-cd-sys = { path = "../bass-cd-sys", optional = true }
+bass-dsd-sys = { path = "../bass-dsd-sys", optional = true }
+bass-enc-flac-sys = { path = "../bass-enc-flac-sys", optional = true }
+bass-enc-mp3-sys = { path = "../bass-enc-mp3-sys", optional = true }
+bass-enc-ogg-sys = { path = "../bass-enc-ogg-sys", optional = true }
+bass-enc-opus-sys = { path = "../bass-enc-opus-sys", optional = true }
+bass-enc-sys = { path = "../bass-enc-sys", optional = true }
+bass-flac-sys = { path = "../bass-flac-sys", optional = true }
+bass-hls-sys = { path = "../bass-hls-sys", optional = true }
+bass-midi-sys = { path = "../bass-midi-sys", optional = true }
+bass-mix-sys = { path = "../bass-mix-sys", optional = true }
+bass-opus-sys = { path = "../bass-opus-sys", optional = true }
+bass-sys = { path = "../bass-sys" }
+bass-wasapi-sys = { path = "../bass-wasapi-sys", optional = true }
+bass-webm-sys = { path = "../bass-webm-sys", optional = true }
+bass-wma-sys = { path = "../bass-wma-sys", optional = true }
+bass-wv-sys = { path = "../bass-wv-sys", optional = true }
+
+[features]
+alac = ["dep:bass-alac-sys"]
+ape = ["dep:bass-ape-sys"]
+cd = ["dep:bass-cd-sys"]
+dsd = ["dep:bass-dsd-sys"]
+enc = ["dep:bass-enc-sys"]
+enc-flac = ["dep:bass-enc-flac-sys"]
+enc-mp3 = ["dep:bass-enc-mp3-sys"]
+enc-ogg = ["dep:bass-enc-ogg-sys"]
+enc-opus = ["dep:bass-enc-opus-sys"]
+flac = ["dep:bass-flac-sys"]
+hls = ["dep:bass-hls-sys"]
+midi = ["dep:bass-midi-sys"]
+mix = ["dep:bass-mix-sys"]
+opus = ["dep:bass-opus-sys"]
+wasapi = ["dep:bass-wasapi-sys"]
+webm = ["dep:bass-webm-sys"]
+wma = ["dep:bass-wma-sys"]
+wv = ["dep:bass-wv-sys"]

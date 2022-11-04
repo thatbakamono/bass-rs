@@ -1,0 +1,4 @@
+[package]
+name = "bass-enc-flac-sys"
+version = "0.1.0"
+edition = "2021"

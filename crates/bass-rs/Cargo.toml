@@ -23,6 +23,11 @@ bass-wasapi-sys = { path = "../bass-wasapi-sys", optional = true }
 bass-webm-sys = { path = "../bass-webm-sys", optional = true }
 bass-wma-sys = { path = "../bass-wma-sys", optional = true }
 bass-wv-sys = { path = "../bass-wv-sys", optional = true }
+once_cell = "1.17.1"
+thiserror = "1.0.40"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+widestring = "1.0.2"
 
 [features]
 alac = ["dep:bass-alac-sys"]
